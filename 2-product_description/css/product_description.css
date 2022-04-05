@@ -231,6 +231,9 @@ text-decoration: none;
 color: rgb(79, 79, 79);
 font-weight: 600;
 }
+.Precautions li{
+    list-style-type: disc;
+}
 .Precautions{
     font-size: 1.125rem;
     line-height: 24px;
