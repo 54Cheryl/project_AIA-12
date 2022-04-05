@@ -151,6 +151,7 @@
 .productMenu_arrow{
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 .productMenu_prev{
     position: absolute;
@@ -231,7 +232,7 @@ color: rgb(79, 79, 79);
 font-weight: 600;
 }
 .Precautions{
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 24px;
 }
 
