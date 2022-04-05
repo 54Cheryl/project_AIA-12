@@ -80,7 +80,8 @@ table {
     text-decoration: none;
     color: rgba(49, 49, 49, 1);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.4rem;
 }
 .nav_list_container a:hover{
     color: rgb(80, 128, 199);
@@ -94,7 +95,6 @@ table {
     /* background-color: aqua; */
     width: 14%;
 }
-
 .nav_icon{
     margin-right: 0.5rem;
 }
