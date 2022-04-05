@@ -57,6 +57,10 @@
 .information_title{
     font-size: 20px;
     font-weight: 600;
+    color: rgb(79, 79, 79);
+}
+.area_content select{
+    margin-bottom: 1rem;
 }
 .informationLine_box{
     background-color: rgba(196, 196, 196, 1);
