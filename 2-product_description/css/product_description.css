@@ -28,8 +28,8 @@
     padding-bottom: 20px;
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: rgb(40, 40, 40) 4px 4px 4px;
-    color: rgb(235, 235, 235);
+    text-shadow: rgb(206, 206, 206) 2px 2px 2px;
+    color: rgb(129, 129, 129);
     
 }
 .productDescription_slogan p{
@@ -37,8 +37,8 @@
     margin: 10px 0px;
     font-size: 22px;
     font-weight: 600;
-    text-shadow: rgb(94, 94, 94) 2px 2px 2px;
-    color: rgb(230, 230, 230);
+    text-shadow: rgb(206, 206, 206) 2px 2px 2px;
+    color: rgb(129, 129, 129);
 }
 .product_showModel_wrapper{
     /* background-color: pink; */
