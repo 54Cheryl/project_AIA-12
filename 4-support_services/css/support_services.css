@@ -185,7 +185,7 @@
 }
 .login_input{
     display: block;
-    width: 70%;
+    width: 90%;
     margin: 20px 0px;
 }
 .login_but{
@@ -196,10 +196,10 @@
 }
 .loginRegister_content input{
     font-size: 20px;
-    padding: 5px 20px;
+    
 }
 .button{
-    width: 80%;
+    width: 90%;
     font-size: 20px;
     cursor: pointer;
 }
@@ -209,4 +209,10 @@
     background-color: rgba(182, 182, 182, 1);
     border: none;
     color: rgba(248, 248, 248, 1);
+}
+.checkbox_txt{
+    line-height: 1.2rem;
+}
+.login_title{
+    padding-top: 12px;
 }
