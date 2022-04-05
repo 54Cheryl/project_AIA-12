@@ -16,8 +16,8 @@
     height: 3.125rem;
     border-radius: 50%;
     border: none;
-    opacity: 65%;
-    background-color: rgb(220, 233, 255);
+    opacity: 60%;
+    background-color: rgb(187, 200, 222);
 }
 .banner_arrow:hover{
     opacity: 80%;
