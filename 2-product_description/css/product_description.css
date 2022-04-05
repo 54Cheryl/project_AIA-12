@@ -232,7 +232,7 @@ color: rgb(79, 79, 79);
 font-weight: 600;
 }
 .Precautions li{
-    list-style-type: disc;
+    list-style-type: decimal;
 }
 .Precautions{
     font-size: 1.125rem;
