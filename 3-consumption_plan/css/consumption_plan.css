@@ -93,6 +93,7 @@
     /* background-color: aqua; */
     padding: 30px;
 }
+
 .step_tag{
     background-color: rgba(235, 243, 255, 1);
     display: flex;
@@ -102,6 +103,13 @@
     border-radius: 90px;
     box-shadow: 0 2px 25px 0 #ccc;
     margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+.txt_slg{
+    font-size: 1.2rem;
+}
+.step_txt{
+    margin-left: 1rem;
 }
 .step_content{
     align-items: center;
