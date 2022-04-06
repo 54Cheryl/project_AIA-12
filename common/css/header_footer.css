@@ -107,7 +107,7 @@ table {
 }
 .footer_section_title{
     /* background-color: aquamarine; */
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: rgb(79, 79, 79);
 }
@@ -133,7 +133,7 @@ table {
     margin: 1.5rem;
 }
 .footer_link li{
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
 }
 
