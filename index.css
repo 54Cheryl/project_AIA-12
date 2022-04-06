@@ -398,3 +398,12 @@ label[for="checkbox"],[for="radio"]{
 .exploreBrand_reserve_background_img img{
     width: 100%;
 }
+.newExhibitionCenter_col , .usedExhibitionCenter_col{
+    opacity: 80%;
+}
+.newExhibitionCenter_col:hover{
+    opacity: 100%;
+}
+.usedExhibitionCenter_col:hover{
+    opacity: 100%;
+}
