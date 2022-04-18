@@ -1,0 +1,209 @@
+.current_page{
+    color: rgb(80, 128, 199);
+    font-weight: 600;
+}
+.page_container{
+    /* background-color: aquamarine; */
+    width: 100%;
+    margin: auto;
+    /* padding-top: 1%; */
+}
+.aboutAIA_container{
+    /* background-color: aquamarine; */
+    background-image: linear-gradient(to bottom,#dbf1ff 85%,#ffffff );
+    width: 100%;
+    margin: auto;
+}
+.aboutAIA_wapper{
+    /* background-color: aquamarine; */
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+}
+.aboutAIA_pic_content{
+    /* background-color: aquamarine; */
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.aboutAIA_pic_content img{
+    width: 100%;
+}
+.aboutAIA_pic_title{
+    position: absolute;
+    color: rgba(235, 235, 235, 1);
+    font-size: 3.5vw;
+    top: 50%;
+    left: 43%;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    text-shadow: rgb(40, 40, 40) 5px 5px 5px;
+}
+
+.aboutAIA_title{
+    display: flex;
+    background-color: rgba(230, 230, 230, 1);
+    font-size: 1.8vw;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10%;
+}
+.aboutAIA_title li{
+    /* background-color: aqua; */
+    padding-top: 2%;
+    padding-bottom: 1%;
+    
+}
+.aboutAIA_title a{
+    text-decoration: none;
+    color: rgba(49, 49, 49, 1);
+}
+.news{
+    /* background-color: aqua; */
+    position: relative;
+}
+.underline_box{
+    /* background-color: rgb(70, 118, 189); */
+    position: relative;
+}
+.underline{
+    background-color: rgb(79, 133, 214);
+    width: 100%;
+    height: 3px;
+    border: 0.5px solid rgb(190, 216, 255);
+    border-radius: 10px;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+}
+@keyframes moving{
+    0%{
+        left: 1%;
+    }
+    100%{
+        left:100%
+    }
+}
+.underline span{
+    width: 20%;
+    height: 100%;
+    background: rgb(200, 220, 255);
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+.newProduct_content , .newEvent_content{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 25px 0 #ccc;
+    padding: 3%;
+}
+.newProduct_title , .newEvent_title{
+    font-size: 2.5vw;
+    text-align: center;
+}
+.txtPic_content{
+    display: flex;
+    padding-top: 5%;
+    justify-content: space-evenly;
+}
+.row{
+    margin: 5%;
+}
+.pic_content{
+    width: 100%;
+    margin: auto;
+}
+.pic_content img{
+    width: 100%;
+}
+.txt_content{
+    line-height: 2.5vw;
+    font-size: 1.5vw;
+    padding: 2%;
+    width: 50%;
+}
+.title_content{
+    position: relative;
+}
+.underlinefull{
+    background-color: rgb(79, 133, 214);
+    width: 15%;
+    height: 2px;
+    left: 42.5%;
+    top: 5vw;
+    position: absolute;
+    overflow: hidden;
+    
+}
+.pic_mob{
+    display: none;
+}
+
+/* 桌機 */
+@media screen and (min-width:992px){
+    .underlinefull{
+        width: 10%;
+        height: 2px;
+        left: 45%;
+        top: 3vw;
+    }
+    .aboutAIA_title h3{
+        font-size: 1.25rem;
+    }
+    .title_content h4{
+        font-size: 2rem;
+        
+    }
+    .txt_content{
+        font-size: 1.2rem;
+    }
+}
+
+/* 手機、平板 */
+@media screen and (max-width:991px){
+    .aboutAIA_pic_title{
+        font-size: 7vw;
+        left: 35%;
+    }
+    .aboutAIA_title h3{
+        font-size: 5vw;
+    }
+    .title_content h4{
+        font-size: 4vw;
+        padding-bottom: 5vw;
+    }
+    .pic_mob{
+        display: contents;
+    }
+    .pic_comp{
+        display: none;
+    }
+    .txtPic_content{
+        display: contents;
+        box-sizing: border-box;
+    }
+    .txt_content{
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 4vw;
+        font-size: 3.5vw;
+        padding: 5vw;
+    }
+    .aboutAIA_title{
+        padding: 1% 10%;
+    }
+    .underline{
+        bottom: -5%;
+    }
+    .page_container{
+        padding-top: 0;
+    }
+}
+@media screen and (min-width:1201px){
+    .aboutAIA_title h3{
+        font-size: 2rem;
+    }
+}

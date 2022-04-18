@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "Arial", "cwTeXYen", "PingFang", "微軟正黑體", sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset結束 */
+.header_container{
+    width: 100%;
+    margin: auto;
+    background-image: url(/images/common_top_shadow.png);
+    background-color: #fff;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.main_header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 1vw 4vw;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    z-index: 19;
+}
+.logo img{
+    vertical-align: top;
+}
+.icon , .logo{
+    list-style: none;
+}
+img{
+    vertical-align: bottom;
+}
+/* 手機、平板 */
+@media screen and (max-width:991px){
+    .main_header{
+        position: sticky;
+        top:0;
+    }
+    .hb{
+        width: 40px;
+        height: 40px;
+        background-color: rgb(230, 230, 230);
+        position: relative;
+    }
+    .hb span{
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: rgb(80, 128, 199);
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .hb span:first-child{
+        top: 11px;
+
+    }
+    .hb span:nth-child(2){
+        top: 0;
+        bottom: 0;
+    }
+    .hb span:last-child{
+        bottom: 11px;
+    }
+    .main_logo{
+        display: none;
+    }
+    .logo{
+        width: 10%;
+        margin-left: 8vw;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .main_nav{
+        background-color: rgb(230, 230, 230);
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        z-index: 20;
+        opacity: 0;
+    }
+    .main_nav a{
+        display: block;
+        color: #000;
+        text-decoration: none;
+        padding: 1.5vw 4vw;
+    }
+    .icon img{
+        box-sizing: border-box;
+        padding: 1vw;
+    }
+    #menu_switch{
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        display: none;
+    }
+    #menu_switch:checked ~ .main_header .main_nav{
+        /* display: block; */
+        left: 0;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+    #menu_switch:checked ~ .main_header .hb span:first-child{
+        top: 19px;
+        transform: rotate(45deg);
+        transition: top 0.2s, transform 0.2s 0.2s;
+    }
+    #menu_switch:checked ~ .main_header .hb span:nth-child(2){
+        display: none;
+    }
+    #menu_switch:checked ~ .main_header .hb span:last-child{
+        bottom: 19px;
+        transform: rotate(-45deg);
+        transition: bottom 0.2s, transform 0.2s 0.2s;
+    }
+    .footer_sections{
+        flex-wrap: wrap;
+        font-size: 2.8vw;
+    }
+    .footer_section{
+        padding: 2vw;
+    }
+    .footer_section_title{
+        font-size: 4vw;
+    }
+    .findUsOn_link a{
+        display: flex;
+        margin: 2vw 1vw;
+        justify-content: center;
+    }
+}
+/* 桌機 */
+@media screen and (min-width:992px){
+    .hb{
+        display: none;
+    }
+    #menu_switch{
+        position: absolute;
+        z-index: 20;
+        display: none;
+    }
+    .main_nav{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    .main_nav a{
+        text-decoration: none;
+        color: rgba(49, 49, 49, 1);
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    .main_nav a:hover{
+        color: rgb(80, 128, 199);
+        font-weight: 600;
+    }
+    .logo{
+        display: none;
+    }
+    .icon{
+        padding-right: 3.5vw;
+        
+    }
+    .icon img{
+        box-sizing: border-box;
+        padding: 0.5vw;
+    }
+    .foot_mob{
+        display: none;
+    }
+}
+

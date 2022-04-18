@@ -1,0 +1,482 @@
+.page_container , .banner_container , .newproduct_container , .exploreBrand_container , .dealerlocator_reserve_container , .slick_slider_container{
+    /* background-color: brown; */
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+}
+.page_container , .banner_container , .slick_slider_container{
+    padding: 0;
+}
+.slick_slider_container{
+    /* background-color: #fa0; */
+    position: relative;
+}
+.banner_arrow{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    /* width: 3.5vw;
+    height: 3.5vw; */
+    padding: 0.8vw;
+    border-radius: 50%;
+    border: none;
+    /* opacity: 40%; */
+    background-color: rgba(187, 200, 222, 0.6);
+    box-sizing: border-box;
+}
+.banner_arrow:hover{
+    background-color: rgba(187, 200, 222, 0.8);
+}
+.banner_arrow img{
+    width: 100%;
+    margin: auto;
+    vertical-align: bottom;
+}
+.banner_prev{
+    left: 2%;
+}
+.banner_next{
+    right: 2%;
+}
+
+.slick_slider_wrapper{
+    position: relative;
+}
+.banner_pic_container img{
+    width: 100%;
+}
+.banner_slogan{
+    /* background-color: rgb(138, 138, 187); */
+    width: 50%;
+    text-align: end;
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    z-index: 1;
+    right: 12%;
+    box-sizing: border-box;
+}
+.banner_slogan_title{
+    /* background-color: #fa0; */
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(235, 235, 235);
+    padding-bottom: 1vw;
+    letter-spacing: 0.1875rem;
+    text-shadow: rgb(40, 40, 40) 5px 5px 5px;
+}
+.banner_slogan_txt{
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    color: rgb(235, 235, 235);
+    padding-bottom: 1vw;
+    letter-spacing: 0.125rem;
+    text-shadow: rgb(40, 40, 40) 5px 5px 5px;
+}
+.banner_more{
+    font-size: 1.4em;
+    background-color: rgb(138, 138, 138);
+    border: none;
+    width: 16%;
+    padding: 0 1em;
+    opacity: 85%;
+    text-decoration: none;
+    /* box-shadow: 2px 2px 2px rgb(153, 153, 153); */
+}
+.banner_more:hover{
+    opacity: 100%;
+}
+.banner_more span{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    
+}
+.newproduct_wrapper , .exploreBrand_wrapper , .dealerlocator_reserve_wrapper{
+    /* background-color: #fa0; */
+    max-width: 1200px;
+    margin: auto;
+}
+.newproduct_title , .exploreBrand_title{
+    /* background-color: #fa0; */
+    padding-top: 4%;
+    padding: 2rem;
+    font-size: 3vw;
+}
+h2{
+    font-size: 3vw;
+    color: rgb(54, 92, 149);
+    text-align: center;
+    padding-top: 3%;
+}
+.newproduct_col{
+    /* background-color: #fa0; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+.exploreBrand_col{
+    /* background-color: #fa0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.newproduct_exhibit , .exploreBrand_exhibit{
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 0px rgb(116, 116, 116);
+    border-radius: 1rem;
+    margin-bottom: 2.5%;
+}
+.newproduct_exhibit{
+    width: 30%;
+}
+.newproduct_exhibit img{
+    width: 100%;
+}
+.exploreBrand_exhibit{
+    width: 35%;
+    margin-bottom: 2.5%;
+}
+.exploreBrand_exhibit img{
+    width: 100%;
+}
+.newproduct_summary , .exploreBrand_summary{
+    /* background-color: rgb(130, 130, 179); */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+.newproduct_label , .exploreBrand_label{
+    /* background-color: aquamarine; */
+    font-size: 1.5em;
+    color: rgb(79, 79, 79);
+    padding-bottom: 6%;
+    /* border-bottom: rgb(70, 118, 189) 2px solid; */
+}
+.newproduct_label{
+    margin-bottom: 1%;
+}
+.underline_box{
+    /* background-color: rgb(70, 118, 189); */
+    position: relative;
+}
+.underline_boxfull{
+    /* background-color: rgb(70, 118, 189); */
+    position: relative;
+}
+.underline{
+    background-color: rgb(79, 133, 214);
+    width: 60%;
+    height: 3px;
+    border: 0.5px solid rgb(190, 216, 255);
+    border-radius: 10px;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+}
+@keyframes moving{
+    0%{
+        left: 1%;
+    }
+    100%{
+        left:100%
+    }
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: rgb(200, 220, 255);
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+.underlinefull{
+    background-color: rgb(79, 133, 214);
+    width: 90%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.newproduct_model{
+    background-color: rgb(241, 253, 255);
+    border: 1px solid rgb(70, 118, 189);
+    color: rgb(70, 118, 189);
+    font-size: 1.4em;
+    padding: 2px 4px;
+    margin-top: 10px;
+}
+.newproduct_txt{
+    padding-left: 8%;
+    padding-bottom: 5px;
+    padding-right: 3.333333%;
+}
+.exploreBrand_txt{
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 5px;
+    
+}
+.newproduct_txt li{
+    padding-bottom: 5px;
+    font-size: 1.4em;
+    color: rgb(79, 79, 79);
+    list-style-image: linear-gradient(0deg,#99ceff, #2c77cc);
+}
+.exploreBrand_txt p{
+    font-size: 1.4em;
+    color: rgb(79, 79, 79);
+    list-style-image: linear-gradient(0deg,#99ceff, #2c77cc);
+    line-height: 23px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.newproduct_txt_more , .exploreBrand_txt_more{
+    /* background-color: pink; */
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+.exploreBrand_txt_more{
+    padding-top: 15px;
+}
+.newproduct_txt_more a{
+    /* background-color: #aa0; */
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(79, 79, 79);
+}
+.exploreBrand_exhibit:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.exploreBrand_txt_more a{
+    /* background-color: #aa0; */
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(79, 79, 79);
+}
+.product_model_more{
+    /* background-color: #aa0; */
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.product_model_search{
+    font-size: 1.2em;
+    padding: 4px 4.166666%;
+    border: none;
+    background-color: rgb(77, 167, 219);
+    color: rgb(248, 248, 248);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 0px rgb(116, 116, 116);
+}
+.product_model_search a{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+.product_model_search:hover{
+    box-shadow: 0px 5px 5px 0px rgb(116, 116, 116);
+    cursor: pointer;
+}
+
+.dealerlocator_reserve_wrapper{
+    /* background-color: #fa0; */
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.dealerlocator_container{
+    /* background-color: pink; */
+    width: 45%;
+    margin-top: 4.166666%;
+}
+.dealerlocator_reserve_title h2{
+    /* background-color: #aaa; */
+    padding-bottom: 20px;
+    padding-top: 2.5%;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 3vw;
+}
+.reserveSelectList_container{
+    /* background-color: pink; */
+    width: 45%;
+    margin-top: 4.166666%;
+}
+.reserveSelectList_content{
+    background-color: #e0eeff;
+    box-shadow: 0px 3px 5px 0px rgb(116, 116, 116);
+    border-radius: 5px;
+}
+.exhibitionCenter_wrapper img{
+    width: 100%;
+}
+.exhibitionCenter_wrapper{
+
+}
+.newExhibitionCenter_col , .usedExhibitionCenter_col{
+    padding-bottom: 5%;
+}
+.reserveSelectList_menu{
+    /* background-color: #7fa8d6; */
+    display: flex;
+    width: 100%;
+}
+.reserveSelectList_item{
+    font-size: 24px;
+    width: 33.333333%;
+    text-align: center;
+    padding: 15px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+.reserveSelectList_rent{
+    background-color: #e0eeff;
+}
+.reserveSelectList_consult , .reserveSelectList_repair{
+    border: 1px solid #e0eeff;;
+    background-color: rgb(77, 167, 219);
+    color: rgb(248, 248, 248);
+}
+.reserveSelectList_main{
+    /* background-color: #aaa; */
+    padding: 15px;
+}
+.reserve_item{
+    margin: 1rem;
+    font-size: 24px;
+}
+.tag{
+    font-size: 22px;
+}
+
+form{
+    font-size: 24px;
+}
+select{
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+input{
+    font-size: 0.8em;
+    margin-top: 8px;
+    
+}
+.ch_ra{
+    margin-left: 16px;
+}
+label[for="checkbox"],[for="radio"]{
+    font-size: 0.8em;
+}
+.reserve_submit{
+    background-color: rgb(77, 167, 219);
+    color: rgb(248, 248, 248);
+    width: 100%;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reserve_submit:hover{
+    box-shadow: 0px 2px 2px 0px rgb(116, 116, 116);
+}
+.newproduct_container , .dealerlocator_reserve_container , .exploreBrand_container{
+    position: relative;
+}
+.newproduct_background_img , .dealerlocator_reserve_background_img , .exploreBrand_reserve_background_img{
+    /* background-color: #2c77cc; */
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    text-align: center;
+}
+.exploreBrand_wrapper{
+    margin-top: 4.166666%;
+}
+.newproduct_background_img img{
+    width: 100%;
+}
+.dealerlocator_reserve_background_img img{
+    width: 100%;
+}
+.exploreBrand_reserve_background_img img{
+    width: 100%;
+}
+.newExhibitionCenter_col , .usedExhibitionCenter_col{
+    opacity: 80%;
+}
+.newExhibitionCenter_col:hover{
+    opacity: 100%;
+}
+.usedExhibitionCenter_col:hover{
+    opacity: 100%;
+}
+/* 手機、平板 */
+@media screen and (max-width:991px){
+    .banner_slogan_title{
+        font-size: 4.5vw;
+    }
+    .banner_slogan_txt , .banner_more{
+        font-size: 3.5vw;
+    }
+    .newproduct_title , .exploreBrand_title{
+        font-size: 6vw;
+        padding: 2vw;
+    }
+    .newproduct_exhibit{
+        width: 100%;
+        margin: 5% 5%;
+    }
+    .dealerlocator_reserve_wrapper , .exploreBrand_col{
+        flex-wrap: wrap;
+    }
+    .dealerlocator_container , .reserveSelectList_container{
+        width: 100%;
+        margin: 5%;
+    }
+    .dealerlocator_reserve_wrapper h2{
+        font-size: 6vw;
+    }
+    .exploreBrand_exhibit{
+        width: 100%;
+        margin: 5%;
+    }
+    .page_container , .banner_container , .slick_slider_container{
+        padding-top: 0;
+    }
+}
+/* 桌機 */
+@media screen and (min-width:1201px){
+    .newproduct_title , .exploreBrand_title{
+        font-size: 40px;
+    }
+    .dealerlocator_reserve_wrapper h2{
+        font-size: 40px;
+    }
+}
