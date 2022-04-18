@@ -55,7 +55,9 @@ table {
     background-color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
-    
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .main_header{
     max-width: 1200px;
@@ -126,6 +128,7 @@ img{
         width: 100%;
         z-index: 20;
         opacity: 0;
+        font-size: 6vw;
     }
     .main_nav a{
         display: block;
