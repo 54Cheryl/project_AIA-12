@@ -51,7 +51,7 @@ table {
 .header_container{
     width: 100%;
     margin: auto;
-    background-image: url(/images/common_top_shadow.png);
+    background-image: url(../images/common_top_shadow.png);
     background-color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
