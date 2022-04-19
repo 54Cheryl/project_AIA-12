@@ -78,8 +78,11 @@ table {
 img{
     vertical-align: bottom;
 }
+
+
+
 /* 手機、平板 */
-@media screen and (max-width:991px){
+@media screen and (max-width:992px){
     .main_header{
         position: sticky;
         top:0;
@@ -182,7 +185,7 @@ img{
     }
 }
 /* 桌機 */
-@media screen and (min-width:992px){
+@media screen and (min-width:993px){
     .hb{
         display: none;
     }
@@ -224,4 +227,3 @@ img{
         display: none;
     }
 }
-
