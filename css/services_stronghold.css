@@ -83,6 +83,7 @@
 }
 .mapTag_mob{
     display: none;
+    justify-content: right;
 }
 .taipei , .taichung{
     display: none;
