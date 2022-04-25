@@ -194,7 +194,7 @@
     text-align: center;
     opacity: 70%;
     margin: 0 1%;
-    
+    box-sizing: border-box;
  }
 .productModel_menu:hover{
     opacity: 100%;
@@ -378,7 +378,7 @@ font-weight: 600;
     }
     .productModel_menu p{
         padding: 0;
-        padding-bottom: 5%;
+        padding: 5% 0px;
     }
     .page_container{
         padding-top: 5%;
