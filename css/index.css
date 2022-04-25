@@ -307,6 +307,9 @@ h2{
     font-size: 18px;
     color: rgb(79, 79, 79);
 }
+.exploreBrand_txt_more a:hover{
+    color: rgb(77, 167, 219);
+}
 .product_model_more{
     /* background-color: #aa0; */
     margin-top: 2.5%;
