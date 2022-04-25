@@ -129,11 +129,47 @@
 .product_showModel_wrapper img{
     width: 100%;
 }
-.productMenu_container{
-    /* background-image: url(/images/product_description_background_bottom_img.png); */
+.sbContainer{
     background-image: linear-gradient(to top,#747474 15%,#e5e2e21e );
     background-repeat: no-repeat;
     background-position: left bottom;
+    width: 100%;
+}
+#sliderBoard{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+#content{
+    position: relative;
+	display: flex;
+}
+#content ul{	/* li */
+	/* float: left; */
+	display: flex;
+    justify-content: space-evenly;
+}
+#content li{	/* li */
+	width: 20%;
+}
+/* circle button */
+#contentButton{
+	/* border: 1px solid red; */
+	text-align: center;
+	width: 100%;
+	height: 50px;
+}
+#contentButton li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgb(231, 249, 255);;
+
+	display: inline-block;
+	margin: 5px;
+}
+#contentButton li.clickMe{
+	background-color: rgb(97, 179, 255);;
 }
 .productMenu_content{
     /* background-color: red; */
@@ -141,8 +177,8 @@
     max-width: 1200px;
     display: flex;
     margin: auto;
-    padding-left: 4%;
-    padding-right: 4%;
+    /* padding-left: 4%; */
+    /* padding-right: 4%; */
     padding-top: 2%;
     padding-bottom: 2%;
     margin-top: 6%;
@@ -346,6 +382,9 @@ font-weight: 600;
     }
     .page_container{
         padding-top: 5%;
+    }
+    #sliderBoard{
+        width: auto;
     }
 }
 /* 桌機 */
