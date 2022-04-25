@@ -157,7 +157,7 @@
 	/* border: 1px solid red; */
 	text-align: center;
 	width: 100%;
-	height: 50px;
+	padding-bottom: 2%;
 }
 #contentButton li{
 	width: 20px;
@@ -385,6 +385,10 @@ font-weight: 600;
     }
     #sliderBoard{
         width: auto;
+    }
+    #contentButton li{
+        width: 15px;
+        height: 15px;
     }
 }
 /* 桌機 */
