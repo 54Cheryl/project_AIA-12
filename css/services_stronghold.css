@@ -126,10 +126,14 @@
     .mapTag{
         display: none;
     }
+    .space_content{
+        flex-grow: 1;
+    }
     .mapTag_mob{
         display: flex;
-        padding-right: 4%;
         justify-content: right;
+        box-sizing: border-box;
+        padding-right: 4%;
     }
     .mapTag_mob > .tag{
         margin: 0;
