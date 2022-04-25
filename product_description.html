@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/font_family.css">
     <link rel="stylesheet" href="css/RWD_hf.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/showLarge.js"></script>
 </head>
 <body>
     <div class="header_container">
@@ -55,7 +57,7 @@
                     <div class="product_showModel_wrapper">
                         <div class="product_showModel_txt_background">
                             <div class="product_showModel_txt">
-                                <img src="images/product_description_tagall.png" alt="">
+                                <img src="/images/product_description_tagall.png" alt="">
                                 <p class="product_maintag">小孩的完美保姆</p>
                                 <p class="productModel">AZ110</p>
                             </div>
@@ -68,16 +70,34 @@
                                         <span>料理</span>
                                     </div>
                                 </div>
-                                <ul>
+                                <ul class="modelList modelS" id="listOne">
                                     <li>適合所有3-14歲的孩童</li>
                                     <li>與您的孩子一起嬉戲</li>
                                     <li>熟知多種的卡牌及桌上遊戲</li>
-                                    <li>上千種有趣的活動(手工藝、烹飪、有趣的體驗)</li>
+                                    <li>上千種有趣的活動</li>
+                                </ul>
+                                <ul class="modelList" id="listTwo">
+                                    <li>砌磚 .鋪瓦 .木工到繪畫,樣樣精通</li>
+                                    <li>從設計到採買一手包辦</li>
+                                    <li>保證每次都是完美品質</li>
+                                    <li>24小時全年無休,絕對遵守期限</li>
+                                </ul>
+                                <ul class="modelList" id="listThree">
+                                    <li>提供從新生兒到長者的全面照顧</li>
+                                    <li>支援所有日常事務</li>
+                                    <li>管理所有的醫療需求</li>
+                                    <li>執行急救的能力</li>
+                                </ul>
+                                <ul class="modelList" id="listFour">
+                                    <li>超過35,000道世界各國的佳餚</li>
+                                    <li>宴席包辦 (80人)</li>
+                                    <li>從購物到清理廚房一手包辦</li>
+                                    <li>營養、有機 (可選功能) 的美食</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="product_showModel_pic">
-                            <img src="images/product_description_AZ110_show.jpg" alt="">
+                            <img id="large" src="images/product_description_AZ110_show.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -85,31 +105,31 @@
         </div>
         <div class="productMenu_container">
             <div class="productMenu_content">
-                <button class="productMenu_prev productMenu_arrow">
+                <!-- <button class="productMenu_prev productMenu_arrow">
                     <img src="images/product_description_left.png" alt="">
-                </button>
-                <div class="productModel_menu first_model">
-                    <img src="images/product_description_AZ110.jpg" alt="">
+                </button> -->
+                <div class="productModel_menu one_model first_model light_model" id="listOne">
+                    <img src="images/product_description_AZ110_show.jpg" alt="">
                     <p>AZ110</p>
                     <!-- <div class="checkborder">
                         <img src="images/product_description_checkborder.png" alt="">
                     </div> -->
                 </div>
-                <div class="productModel_menu">
-                    <img src="images/product_description_CP100.jpg" alt="">
+                <div class="productModel_menu two_model" id="listTwo">
+                    <img src="images/product_description_NC200_show.jpg" alt="">
                     <p>CP100</p>
                 </div>
-                <div class="productModel_menu">
-                    <img src="images/product_description_SK700.jpg" alt="">
-                    <p>SK700</p>
-                </div>
-                <div class="productModel_menu">
-                    <img src="images/product_description_SD600.jpg" alt="">
+                <div class="productModel_menu three_model" id="listThree">
+                    <img src="images/product_description_SD600_show.jpg" alt="">
                     <p>SD600</p>
                 </div>
-                <button class="productMenu_next productMenu_arrow">
+                <div class="productModel_menu four_model" id="listFour">
+                    <img src="images/product_description_SK700_show.jpg" alt="">
+                    <p>SK700</p>
+                </div>
+                <!-- <button class="productMenu_next productMenu_arrow">
                     <img src="images/product_description_right.png" alt="">
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
@@ -125,20 +145,22 @@
                 <div class="morelink">
                     <ul class="morelink_list">
                         <li class="morelink_item">
-                            <a href="javascript">客製化諮詢</a>
+                            <a href="consumption_plan_buy.html">客製化諮詢</a>
                         </li>
                         <li class="morelink_item">
-                            <a href="javascript">購買諮詢</a>
+                            <a href="consumption_plan_buy.html">購買諮詢</a>
                         </li>
                         <li class="morelink_item">
-                            <a href="javascript">庫存查詢</a>
+                            <a href="services_stronghold.html">庫存查詢</a>
                         </li>
                         <li class="morelink_item">
                             <a href="consumption_plan.html">消費方案介紹</a>
                         </li>
                     </ul>
                 </div>
+                
                 <ul class="Precautions">
+                    <h3>注意事項</h3>
                     <li>價格皆含稅與運送費用。</li>
                     <li>優惠僅適用於新訂戶且限時提供，優惠在符合條件配對後的 3 個月內有效。租借方案會於期間自動續約，直到取消為止。。服務的供應狀況視地區而異。須受限制與其他條款約束。</li>
                     <li>實際換購估價視你折抵換購商品的狀況、年份與配置而有所差異。你必須至少年滿 20 歲，才有折抵換購的資格，以獲享折抵優惠。並非所有商品均符合折抵條件，並且 新品展示中心各據點不提供商品換購。中古展示中心的各據點換購保留以任何理由拒絕或限制接受任何商品 (及其數量) 參與本優惠的權利。最終折抵款項是根據所收到的商品是否符合你在估價時提供的描述。可能會有限制與局限。

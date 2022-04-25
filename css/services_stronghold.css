@@ -84,6 +84,13 @@
 .mapTag_mob{
     display: none;
 }
+.taipei , .taichung{
+    display: none;
+}
+.taipeiImg , .taichungImg{
+    display: none;
+}
+
 /* 手機、平板 */
 @media screen and (max-width:991px){
     .servicesStronghold_pic_title{
@@ -154,6 +161,7 @@
         padding-bottom: 1vw;
         line-height: 5.5vw;
         border-bottom: 1px solid rgba(222, 222, 222, 1);
+        box-sizing: border-box;
     }
     .first{
         border-left: 3px solid rgba(70, 118, 189, 1);

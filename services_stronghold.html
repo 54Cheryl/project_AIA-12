@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/font_family.css">
     <link rel="stylesheet" href="css/RWD_hf.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/stronghold.js"></script>
 </head>
 <body>
     <div class="header_container">
@@ -59,21 +61,20 @@
                     <div class="area_content">
                         <form action="">
                             <p class="information_title">> 地區:</p>
-                            <select name="" id="">
-                                <option value="">請選擇</option>
-                                <option value="">台北</option>
-                                <option value="">桃竹苗</option>
-                                <option value="">中彰投</option>
-                                <option value="">雲嘉南</option>
-                                <option value="">高屏</option>
-                                <option value="">宜蘭花蓮</option>
+                            <select name="" id="place">
+                                <option value="presetPlace">請選擇</option>
+                                <option value="taipei">北區</option>
+                                <option value="taichung">中區</option>
+                                <option value="tainan">南區</option>
+                                <option value="taitung">東區</option>
+                                
                             </select>
                             <p class="information_title">> 服務據點</p>
-                            <input type="checkbox" id="new">
+                            <input name="check_col" type="checkbox" id="new">
                             <label for="new">新品展示中心</label><br>
-                            <input type="checkbox" id="used">
+                            <input name="check_col" type="checkbox" id="used">
                             <label for="used">中古展示中心</label><br>
-                            <input type="checkbox" id="service">
+                            <input name="check_col" type="checkbox" id="service">
                             <label for="service">服務中心</label><br>
                         </form>
                         <div class="information_content">
@@ -81,42 +82,59 @@
                             <div class="informationLine_box">
                                 <span></span>
                             </div>
-                            <div class="areaStronghold_content">
-                                <div class="areaStronghold_txt first">
-                                    <p class="txt_title">內湖新品展示中心</p>
+                            <div class="areaStronghold_content taipei">
+                                <div class="areaStronghold_txt txt_new">
+                                    <p class="txt_title">北區新品展示中心</p>
                                     <p>123台北市內湖區緯育路一段00號</p>
                                     <p>(02)1234-1234</p>
                                 </div>
-                                <div class="areaStronghold_txt">
-                                    <p class="txt_title">敦南新品展示中心</p>
-                                    <p>123台北市內湖區緯育路一段00號</p>
+                                <div class="areaStronghold_txt txt_used">
+                                    <p class="txt_title">北區中古展示中心</p>
+                                    <p>123台北市大安區緯育路一段00號</p>
                                     <p>(02)1234-1234</p>
                                 </div>
-                                <div class="areaStronghold_txt">
-                                    <p class="txt_title">敦南中古展示中心</p>
-                                    <p>123台北市內湖區緯育路一段00號</p>
+                                <div class="areaStronghold_txt txt_service">
+                                    <p class="txt_title">北區服務中心</p>
+                                    <p>123台北市松山區緯育路一段00號</p>
                                     <p>(02)1234-1234</p>
                                 </div>
-                                <div class="areaStronghold_txt">
-                                    <p class="txt_title">民生新品展示中心</p>
-                                    <p>123台北市內湖區緯育路一段00號</p>
+                            </div>
+                            <div class="areaStronghold_content taichung">
+                                <div class="areaStronghold_txt txt_new">
+                                    <p class="txt_title">中區新品展示中心</p>
+                                    <p>123台中市東區緯育路一段00號</p>
+                                    <p>(02)1234-1234</p>
+                                </div>
+                                <div class="areaStronghold_txt txt_used">
+                                    <p class="txt_title">中區中古展示中心</p>
+                                    <p>123台中市西區緯育路一段00號</p>
+                                    <p>(02)1234-1234</p>
+                                </div>
+                                <div class="areaStronghold_txt txt_service">
+                                    <p class="txt_title">中區服務中心</p>
+                                    <p>123台中市中區緯育路一段00號</p>
                                     <p>(02)1234-1234</p>
                                 </div>
                             </div>
                         </div>
                         <div class="areaStronghold_map">
-                            <img src="images/services_stronghold_map.png" alt="">
+                            <div class="placeMap taipeiImg">
+                                <img src="images/services_stronghold_map_taipei.jpg" alt="">
+                            </div>
+                            <div class="placeMap taichungImg">
+                                <img src="images/services_stronghold_map_taichung.jpg" alt="">
+                            </div>
                             <div class="mapTag">
                                 <div class="newtag tag">
-                                    <img src="images/services_stronghold_tag.png" alt="">
+                                    <img src="images/services_stronghold_new.jpg" alt="">
                                     <span>新品展示中心</span>
                                 </div>
                                 <div class="usedtag tag">
-                                    <img src="images/services_stronghold_tag.png" alt="">
+                                    <img src="images/services_stronghold_used.jpg" alt="">
                                     <span>中古展示中心</span>
                                 </div>
                                 <div class="newtag tag">
-                                    <img src="images/services_stronghold_tag2.png" alt="">
+                                    <img src="images/services_stronghold_service.jpg" alt="">
                                     <span>服務中心</span>
                                 </div>
                             </div>
@@ -141,25 +159,37 @@
                         <div class="informationLine_box">
                             <span></span>
                         </div>
-                        <div class="areaStronghold_content">
-                            <div class="areaStronghold_txt first">
-                                <p class="txt_title">內湖新品展示中心</p>
+                        <div class="areaStronghold_content taipei">
+                            <div class="areaStronghold_txt txt_new">
+                                <p class="txt_title">北區新品展示中心</p>
                                 <p>123台北市內湖區緯育路一段00號</p>
                                 <p>(02)1234-1234</p>
                             </div>
-                            <div class="areaStronghold_txt">
-                                <p class="txt_title">敦南新品展示中心</p>
-                                <p>123台北市內湖區緯育路一段00號</p>
+                            <div class="areaStronghold_txt txt_used">
+                                <p class="txt_title">北區中古展示中心</p>
+                                <p>123台北市大安區緯育路一段00號</p>
                                 <p>(02)1234-1234</p>
                             </div>
-                            <div class="areaStronghold_txt">
-                                <p class="txt_title">敦南中古展示中心</p>
-                                <p>123台北市內湖區緯育路一段00號</p>
+                            <div class="areaStronghold_txt txt_service">
+                                <p class="txt_title">北區服務中心</p>
+                                <p>123台北市松山區緯育路一段00號</p>
                                 <p>(02)1234-1234</p>
                             </div>
-                            <div class="areaStronghold_txt">
-                                <p class="txt_title">民生新品展示中心</p>
-                                <p>123台北市內湖區緯育路一段00號</p>
+                        </div>
+                        <div class="areaStronghold_content taichung">
+                            <div class="areaStronghold_txt txt_new">
+                                <p class="txt_title">中區新品展示中心</p>
+                                <p>123台中市東區緯育路一段00號</p>
+                                <p>(02)1234-1234</p>
+                            </div>
+                            <div class="areaStronghold_txt txt_used">
+                                <p class="txt_title">中區中古展示中心</p>
+                                <p>123台中市西區緯育路一段00號</p>
+                                <p>(02)1234-1234</p>
+                            </div>
+                            <div class="areaStronghold_txt txt_service">
+                                <p class="txt_title">中區服務中心</p>
+                                <p>123台中市中區緯育路一段00號</p>
                                 <p>(02)1234-1234</p>
                             </div>
                         </div>

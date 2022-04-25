@@ -8,6 +8,9 @@
     margin: auto;
     /* padding-top: 1%; */
 }
+.fadein{
+    opacity: 0;
+}
 .consumptionPlan_container{
     /* background-color: aquamarine; */
     background-image: linear-gradient(to bottom,#dbf1ff 85%,#ffffff );

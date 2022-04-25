@@ -75,6 +75,9 @@ table {
 .icon , .logo{
     list-style: none;
 }
+.icon img{
+    cursor: pointer;
+}
 img{
     vertical-align: bottom;
 }

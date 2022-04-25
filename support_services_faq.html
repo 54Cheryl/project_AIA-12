@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>支援服務</title>
-    <link rel="stylesheet" href="css/support_services.css">
+    <link rel="stylesheet" href="css/support_services_faq.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/font_family.css">
     <link rel="stylesheet" href="css/RWD_hf.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/faq.js"></script>
 </head>
 <body>
     <div class="header_container">
@@ -37,9 +39,9 @@
                 </a>
             </li>
             <li class="icon">
-                <img src="images/common_login.png" alt="">
-                <img src="images/common_language.png" alt="">
-                <img src="images/common_search.png" alt="">
+                <img src="/images/common_login.png" alt="">
+                <img src="/images/common_language.png" alt="">
+                <img src="/images/common_search.png" alt="">
             </li>
         </div>
     </div>
@@ -52,18 +54,18 @@
             
         </div>
         <ul class="supportServices_title">
-            <li class="repair underline_box">
+            <li class="repair">
                 <a href="support_services.html">
                     <h3>線上預約</h3>
+                </a>
+            </li>
+            <li class="faq underline_box">
+                <a href="support_services_faq.html">
+                    <h3>常見問題</h3>
                 </a>
                 <div class="underline">
                     <span></span>
                 </div>
-            </li>
-            <li class="faq">
-                <a href="support_services_faq.html">
-                    <h3>常見問題</h3>
-                </a>
             </li>
             <li class="contactUs">
                 <a href="">
@@ -73,78 +75,90 @@
         </ul>
         <div class="supportServices_container">
             <div class="supportServices_wapper">
-                <div class="maintenance_content">
-                    <h4 class="reserveServices_title">簡易五步驟完成線上預約</h4>
-                    <p class="reserveServices_tip">維修保養服務、中古出售預約</p>
-                    <div class="loginStep">
-                        <ul class="fiveStep">
-                            <li>
-                                <div class="stepNumber numberOne">
-                                    <span>1</span>
-                                </div>
-                                <div class="stepTxt">
-                                    <span>登入</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="stepNumber">
-                                    <span>2</span>
-                                </div>
-                                <div class="stepTxt">
-                                    <span>據點</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="stepNumber">
-                                    <span>3</span>
-                                </div>
-                                <div class="stepTxt">
-                                    <span>型號</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="stepNumber">
-                                    <span>4</span>
-                                </div>
-                                <div class="stepTxt">
-                                    <span>服務</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="stepNumber">
-                                    <span>5</span>
-                                </div>
-                                <div class="stepTxt">
-                                    <span>完成</span>
-                                </div>
-                            </li>
-                            <div class="stepFiveLine_box">
-                                <span></span>
-                            </div>
-                        </ul>
-                    </div>
-                    
-                </div>
                 <div class="loginRegister_content">
-                    <div class="login_content">
-                        <p class="login_title">登入</p>
-                        <form action="">
-                            <input class="login_input" type="tel" placeholder="帳號*" name="account">
-                            <input class="login_input" type="password" placeholder="密碼*" name="password">
-                            <input type="checkbox" name="" id="checkbox">
-                            <label class="checkbox_txt" for="checkbox">我已仔細閱讀並明暸「服務條款」、「免責聲明」、「隱私權聲明」等所屬內容及其意義</label>
-                            <button class="login_input login_but button">登入</button>
-                            <a href="javascript">忘記密碼?</a>
-                            <button class="register_account button button_mob">建立帳號</button>
-                        </form>
+                    <div class="title_content">
+                        <h4 class="newProduct_title">常見問題</h4>
+                        <div class="underlinefull">
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="register_content">
-                        <p>立即加入</p>
-                        <p>體驗專屬數位服務!</p>
-                        <button class="register_account button">建立帳號</button>
-                    </div>
-
-
+                    <ul class="menu">
+                        <p>
+                            <img src="images/faq_cir.png">
+                            為什麼需要註冊會員帳號?
+                        </p>
+                        <div class="ans">答：
+                            <li>
+                                線上預約維修保養後，派專員前往客戶指定地點運回原廠維修，使維修保養更加方便快速。
+                            </li>
+                            <li>
+                                維上預約中古出售後，將會有專人與您聯絡相關事誼、注意事項。
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="menu">
+                        <p>
+                            <img src="images/faq_cir.png">
+                            我是網路會員，可先付款再請別人代領取商品嗎?
+                        </p>
+                        <div class="ans">答：
+                            <li>
+                                很抱歉，線上預約付款人、領取人與預訂人需為同一位，且於領取時需出示「身份證正本」及「中華民國駕照正本」方可領取。
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="menu">
+                        <p>
+                            <img src="images/faq_cir.png">
+                            我可以在網站上預訂幾個月之內的呢?
+                        </p>
+                        <div class="ans">答：
+                            <li>
+                                本系統目前僅開放3個月內之預訂，網路預約最快可預約24~48小時以內。如有其他日期之預訂需求，請洽各據點（請參考「服務據點」）。
+                            </li>
+                            <li>
+                                ＊本公司保留接受及變更訂單與否之權利。
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="menu">
+                        <p>
+                            <img src="images/faq_cir.png">
+                            在網站/電話租用可以甲租乙還嗎?
+                        </p>
+                        <div class="ans">答：
+                            <li>
+                                沒有問題！只要您在預約時，選擇適用於「甲租乙還」服務的方案，並確實選擇您的取/還據點，便可以享受「甲租乙還」的服務。
+                            </li>
+                            <li>
+                                ＊特殊型號恕無法提供甲租乙還。
+                            </li>
+                            <li>
+                                ＊請於預約時一併提出申請，若在取得商品後提出，將收取同縣市300元，跨縣市1,000元之緊急處理費。
+                            </li>
+                            
+                        </div>
+                    </ul>
+                    <ul class="menu">
+                        <p><img src="images/faq_cir.png">
+                            我能否在網站上預訂之後到據點刷卡付費?
+                        </p>
+                        <div class="ans">答：
+                            <li>
+                                很抱歉，由於預訂當下需與系統連線付款方能完成預訂手續，若對您有造成不便之處，請多見諒。
+                            </li>
+                        </div>
+                    </ul>
+                    <ul class="menu">
+                        <p><img src="images/faq_cir.png">
+                            我想在網路預約租用，但訊息跳出無型號可供使用，怎麼辦?
+                        </p>
+                        <div class="ans">答：
+                            <li>
+                                若預約頁面顯示此訊息，代表此時段或此據點目前無該型號庫存。請您重新設定查詢條件，或直接撥打該據點的專線（請參考「服務據點」），將有專人為您儘快處理。
+                            </li>
+                        </div>
+                    </ul>
                 </div>
             </div>
         </div>

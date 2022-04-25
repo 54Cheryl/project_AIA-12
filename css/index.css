@@ -7,6 +7,32 @@
 .page_container , .banner_container , .slick_slider_container{
     padding: 0;
 }
+#sliderBoard{
+    width: 100%;
+    overflow: hidden;
+}
+#sliderBoard ul{
+    width: 500%;
+    display: flex;
+    position: relative;
+    animation: slider 20s infinite;
+}
+#sliderBoard li{
+    width: 100%;
+}
+@keyframes slider{
+    0%{left:0%;}
+    11%{left:0%;}
+    22%{left:-100%;}
+    33%{left:-100%;}
+    44%{left:-200%;}
+    55%{left:-200%;}
+    66%{left:-300%;}
+    77%{left:-300%;}
+    88%{left:-400%;}
+    99%{left:-400%;}
+    
+}
 .slick_slider_container{
     /* background-color: #fa0; */
     position: relative;
@@ -41,6 +67,9 @@
 }
 
 .slick_slider_wrapper{
+    position: relative;
+}
+.banner_pic_container{
     position: relative;
 }
 .banner_pic_container img{
@@ -263,6 +292,10 @@ h2{
     font-size: 1.2em;
     color: rgb(79, 79, 79);
 }
+.newproduct_txt_more a:hover{
+    color: rgb(77, 167, 219);
+}
+
 .exploreBrand_exhibit:hover{
     transform: scale(1.1);
     transition: 0.5s;

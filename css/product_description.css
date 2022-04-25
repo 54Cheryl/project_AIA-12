@@ -4,7 +4,7 @@
 }
 .page_container{
     /* background-color: aquamarine; */
-    background-image: url(../images/product_description_background_img.png);
+    background-image: url(/images/product_description_background_img.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -58,7 +58,7 @@
     justify-content: center;
 }
 .product_showModel_txt_background{
-    background-image: url(../images/product_description_black_show.png);
+    background-image: url(/images/product_description_black_show.png);
     box-sizing: border-box;
     padding-left: 5%;
     padding-right: 5%;
@@ -92,7 +92,7 @@
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     
 }
 .tag_first{
@@ -130,7 +130,8 @@
     width: 100%;
 }
 .productMenu_container{
-    background-image: url(../images/product_description_background_bottom_img.png);
+    /* background-image: url(/images/product_description_background_bottom_img.png); */
+    background-image: linear-gradient(to top,#747474 15%,#e5e2e21e );
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -155,12 +156,14 @@
     background-color: rgb(60, 60, 60);
     border-radius: 5px;
     text-align: center;
-    opacity: 80%;
+    opacity: 70%;
     margin: 0 1%;
+    
  }
- .productModel_menu:hover{
+.productModel_menu:hover{
     opacity: 100%;
  }
+
 .productModel_menu p{
     /* background-color: red; */
     color: rgb(231, 249, 255);
@@ -171,7 +174,8 @@
 .productMenu_content img{
     width: 100%;
 }
-.first_model{
+
+.light_model{
     position: relative;
     opacity: 100%;
 }
@@ -186,7 +190,7 @@
     padding: 0 1%;
 }
 .productOverview_morelink_container{
-    background-image: url(../images/product_description_background_blue_img.png);
+    background-image: url(/images/product_description_background_blue_img.png);
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-color: red; */
@@ -256,7 +260,10 @@ font-weight: 600;
     font-size: 1.125rem;
     line-height: 24px;
 }
-
+.Precautions h3{
+    box-sizing: border-box;
+    padding-bottom: 2%;
+}
 .productMenu_background_img img{
     width: 100%;
 }
@@ -264,10 +271,20 @@ font-weight: 600;
 .productDescription_pic_content img{
     width: 100%;
 }
+.productModel_function ul{
+    padding-left: 2%;
+}
+.modelList{
+    display: none;
+}
+.modelS{
+    display: contents;
+} 
+
 /* 手機、平板 */
 @media screen and (max-width:991px){
     .product_showModel_wrapper{
-        background-image: url(../images/product_description_black_show.png);
+        background-image: url(/images/product_description_black_show.png);
     }
     .product_showModel_txt_background{
         background-image: none;
