@@ -4,7 +4,7 @@
 }
 .page_container{
     /* background-color: aquamarine; */
-    background-image: url(../images/product_description_background_img.png);
+    background-image: linear-gradient(to top,rgba(80, 128, 199, 0.4),rgba(101, 144, 207, 0.1)),url(../images/product_description_background_img.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: left bottom;
