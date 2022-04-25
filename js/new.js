@@ -5,8 +5,6 @@ $(function () {
     // alert(imgCount)
 
     $('#content').width(divWidth * imgCountList);   // ul 的寬度
-    // $('#content').width(divWidth * imgCountList);
-    // $('#content li').width(divWidth);           // li 的寬度
     $('#content ul').width(divWidth);           // 移動 的寬度
 
     for(let i = 0; i < imgCountList; i++){
