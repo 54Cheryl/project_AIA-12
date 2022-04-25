@@ -4,7 +4,7 @@
 }
 .page_container{
     /* background-color: aquamarine; */
-    background-image: url(/images/product_description_background_img.png);
+    background-image: url(../images/product_description_background_img.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -190,7 +190,7 @@
     padding: 0 1%;
 }
 .productOverview_morelink_container{
-    background-image: url(/images/product_description_background_blue_img.png);
+    background-image: url(../images/product_description_background_blue_img.png);
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-color: red; */
@@ -284,7 +284,8 @@ font-weight: 600;
 /* 手機、平板 */
 @media screen and (max-width:991px){
     .product_showModel_wrapper{
-        background-image: url(/images/product_description_black_show.png);
+        /* background-image: url(../images/product_description_black_show.png); */
+        background-color: rgba(60, 60, 60, 0.7);
     }
     .product_showModel_txt_background{
         background-image: none;
