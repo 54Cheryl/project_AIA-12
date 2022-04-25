@@ -58,7 +58,7 @@
     justify-content: center;
 }
 .product_showModel_txt_background{
-    background-image: url(/images/product_description_black_show.png);
+    background-image: url(../images/product_description_black_show.png);
     box-sizing: border-box;
     padding-left: 5%;
     padding-right: 5%;
